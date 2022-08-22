@@ -6,6 +6,16 @@ class Home extends BaseController
 {
     public function index()
     {
+        return view('signin');
+    }
+    
+    public function signup()
+    {
+        return view('signup');
+    }
+
+    public function dashboard()
+    {
         return view('dashboard');
     }
 

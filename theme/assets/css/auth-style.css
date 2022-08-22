@@ -1,0 +1,70 @@
+.login-page,
+.register-page {
+  background: url(../images/body-bg.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.login-box,
+.register-box {
+  width: 400px;
+  margin: 7% auto;
+}
+.login-box-body,
+.register-box-body {
+  background: #fff;
+  padding: 20px;
+  border-top: 0;
+  color: #666;
+  border-radius: 7px;
+}
+.login-box-msg,
+.register-box-msg {
+  margin: 0;
+  text-align: center;
+  padding: 0 20px 5px 20px;
+}
+.form-control.sty1 {
+  border-radius: 0px;
+  box-shadow: none;
+  border: 0;
+  border-bottom: solid 1px #d9d9d9;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0;
+}
+.form-control:not(select) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 14px;
+}
+.form-control {
+  border-radius: 4px;
+  box-shadow: none;
+  border-color: #d2d6de;
+}
+.m-t-1 {
+  margin-top: 10px !important;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.btn.btn-flat {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-width: 1px;
+}
+.btn-primary {
+  background-color: #0077d3;
+  border-color: #4857d0;
+}
+.btn {
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid transparent;
+  font-size: 14px;
+  padding: 10px 20px;
+}
