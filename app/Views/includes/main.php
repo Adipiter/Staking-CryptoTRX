@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <!-- Tell the browser to be responsive to screen width -->
-        <title>Admin Lite Template by WrapPixel</title>
+        <title><?= $title; ?></title>
         <!-- Favicon icon -->
         <link
             rel="icon"

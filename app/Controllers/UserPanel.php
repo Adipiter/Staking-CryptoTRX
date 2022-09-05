@@ -1,31 +1,45 @@
 <?php
 namespace App\Controllers;
 
-class UserPanel
- extends BaseController{
+class UserPanel extends BaseController{
     public function dashboard()
     {
-        return view('dashboard');
+        $data = [
+            'title' => 'Dasboard page'
+        ];
+        return view('dashboard', $data);
     }
 
     public function deposits()
     {
-        return view('deposits');
+        $data = [
+            'title' => 'Deposit page'
+        ];
+        return view('deposits', $data);
     }
 
     public function history()
     {
-        return view('history');
+        $data = [
+            'title' => 'History page'
+        ];
+        return view('history', $data);
     }
 
     public function reff()
     {
-        return view('reff');
+        $data = [
+            'title' => 'Referall list'
+        ];
+        return view('reff', $data);
     }
 
     public function settings()
     {
-        return view('settings');
+        $data = [
+            'title' => 'User setting'
+        ];
+        return view('settings', $data);
     }
 
 }
