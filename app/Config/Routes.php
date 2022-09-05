@@ -47,11 +47,11 @@ $routes->group('login', function ($routes) {
 $routes->group('logout', function ($routes) {
     $routes->get('/', 'Logout::index');
 });
-$routes->get('dashboard', 'Home::dashboard');
-$routes->get('deposits', 'Home::deposits');
-$routes->get('history', 'Home::history');
-$routes->get('reff', 'Home::reff');
-$routes->get('settings', 'Home::settings');
+$routes->get('dashboard', 'UserPanel::dashboard');
+$routes->get('deposits', 'UserPanel::deposits');
+$routes->get('history', 'UserPanel::history');
+$routes->get('reff', 'UserPanel::reff');
+$routes->get('settings', 'UserPanel::settings');
 
 /*
  * --------------------------------------------------------------------

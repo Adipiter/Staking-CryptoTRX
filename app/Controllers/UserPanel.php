@@ -1,7 +1,8 @@
 <?php
 namespace App\Controllers;
 
-class Home extends BaseController{
+class UserPanel
+ extends BaseController{
     public function dashboard()
     {
         return view('dashboard');
