@@ -17,7 +17,7 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('Login');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -35,9 +35,18 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('signin', 'Home::index');
-$routes->get('signup', 'Home::signup');
+$routes->get('/', 'Login::index');
+$routes->group('register', function($routes){
+    $routes->get('/', 'Register::index');
+    $routes->post('/', 'Register::store');
+});
+$routes->group('login', function ($routes) {
+    $routes->get('/', 'Login::index');
+    $routes->post('/', 'Login::login');
+});
+$routes->group('logout', function ($routes) {
+    $routes->get('/', 'Logout::index');
+});
 $routes->get('dashboard', 'Home::dashboard');
 $routes->get('deposits', 'Home::deposits');
 $routes->get('history', 'Home::history');

@@ -1,19 +1,7 @@
 <?php
-
 namespace App\Controllers;
 
-class Home extends BaseController
-{
-    public function index()
-    {
-        return view('signin');
-    }
-    
-    public function signup()
-    {
-        return view('signup');
-    }
-
+class Home extends BaseController{
     public function dashboard()
     {
         return view('dashboard');

@@ -117,6 +117,16 @@
                                     <span class="hide-menu">Settings</span>
                                 </a>
                             </li>
+                            <li class="sidebar-item">
+                                <a
+                                    class="sidebar-link waves-effect waves-dark sidebar-link"
+                                    href="logout"
+                                    aria-expanded="false">
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                    <span class="hide-menu">Logout</span>
+                                </a>
+                            </li>
+
                         </ul>
                     </nav>
                 </div>
