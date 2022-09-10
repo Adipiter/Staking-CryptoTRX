@@ -10,12 +10,12 @@
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="theme/assets/images/favicon.png"/>
+            href="<?php echo base_url('images/favicon.png'); ?>"/>
         <!-- Custom CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
             rel="stylesheet"/>
-        <link rel="stylesheet" href="theme/assets/css/style.min.css"/>
+        <link rel="stylesheet" href="<?php echo base_url('css/style.min.css'); ?>"/>
     </head>
 
     <body>
@@ -54,7 +54,7 @@
                         <ul class="navbar-nav ms-auto d-flex align-items-center">
                             <li>
                                 <a class="profile-pic" href="/"><img
-                                    src="theme/assets/images/varun.jpg"
+                                    src="<?php echo base_url('images/varun.jpg'); ?>"
                                     alt="user-img"
                                     width="36"
                                     class="img-circle"/>
@@ -73,11 +73,11 @@
             </footer>
 
         </div>
-        <script src="theme/assets/js/jquery.min.js"></script>
+        <script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
         <!-- Bootstrap tether Core JavaScript -->
-        <script src="theme/assets/js/bootstrap.bundle.js"></script>
-        <script src="theme/assets/js/bootstrap.min.js"></script>
+        <script src="<?php echo base_url('js/bootstrap.bundle.js'); ?>"></script>
+        <script src="<?php echo base_url('js/bootstrap.min.js'); ?>"></script>
         <!--Custom JavaScript -->
-        <script src="theme/assets/js/custom.js"></script>
+        <script src="<?php echo base_url('js/custom.js'); ?>"></script>
     </body>
 </html>

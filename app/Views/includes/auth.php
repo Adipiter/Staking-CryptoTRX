@@ -12,7 +12,7 @@
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
-        <link rel="stylesheet" href="theme/assets/css/auth-style.css" />
+        <link rel="stylesheet" href="<?php echo base_url('public/css/auth-style.css'); ?>" />
     </head>
     <body class="hold-transition login-page">
         
@@ -21,12 +21,9 @@
         <!-- /.Content -->
 
         <!-- jQuery 3 -->
-        <script src="assets/js/jquery.min.js"></script>
+        <script src="<?php echo base_url('public/js/jquery.min.js'); ?>"></script>
 
         <!-- v4.0.0-alpha.6 -->
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
-        <!-- template -->
-        <script src="assets/js/niche.html"></script>
+        <script src="<?php echo base_url('public/js/bootstrap.min.js'); ?>"></script>
     </body>
 </html>
