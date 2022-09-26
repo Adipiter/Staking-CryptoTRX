@@ -10,12 +10,12 @@
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="<?php echo base_url('images/favicon.png'); ?>"/>
+            href="<?php echo base_url('public/images/favicon.png'); ?>"/>
         <!-- Custom CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
             rel="stylesheet"/>
-        <link rel="stylesheet" href="<?php echo base_url('css/style.min.css'); ?>"/>
+        <link rel="stylesheet" href="<?php echo base_url('public/css/style.min.css'); ?>"/>
     </head>
 
     <body>
@@ -38,7 +38,7 @@
                     <div class="navbar-header" data-logobg="skin6">
                         <a class="navbar-brand" href="dashboard">
                             <span class="logo-text">
-                                <img src="theme/assets/images/logo-text.png" alt="homepage"/>
+                                <img src="<?php echo base_url('public/images/logo-text.png'); ?>" alt="homepage"/>
                             </span>
                         </a>
                         <a
@@ -53,12 +53,13 @@
                         data-navbarbg="skin5">
                         <ul class="navbar-nav ms-auto d-flex align-items-center">
                             <li>
-                                <a class="profile-pic" href="/"><img
-                                    src="<?php echo base_url('images/varun.jpg'); ?>"
+                                <div class="profile-pic" href="/"><img
+                                    src="<?php echo base_url('public/images/varun.jpg'); ?>"
                                     alt="user-img"
                                     width="36"
                                     class="img-circle"/>
-                                    <span class="text-white font-medium">Steave</span></a >
+                                    <span class="text-white font-medium">Steave</span>
+                                </div >
                             </li>
                         </ul>
                     </div>
@@ -73,11 +74,11 @@
             </footer>
 
         </div>
-        <script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
+        <script src="<?php echo base_url('public/js/jquery.min.js'); ?>"></script>
         <!-- Bootstrap tether Core JavaScript -->
-        <script src="<?php echo base_url('js/bootstrap.bundle.js'); ?>"></script>
-        <script src="<?php echo base_url('js/bootstrap.min.js'); ?>"></script>
+        <script src="<?php echo base_url('public/js/bootstrap.bundle.js'); ?>"></script>
+        <script src="<?php echo base_url('public/js/bootstrap.min.js'); ?>"></script>
         <!--Custom JavaScript -->
-        <script src="<?php echo base_url('js/custom.js'); ?>"></script>
+        <script src="<?php echo base_url('public/js/custom.js'); ?>"></script>
     </body>
 </html>

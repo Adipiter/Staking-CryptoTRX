@@ -51,7 +51,7 @@ $routes->get('dashboard', 'UserPanel::dashboard');
 $routes->get('deposits', 'UserPanel::deposits');
 $routes->get('history', 'UserPanel::history');
 $routes->get('reff', 'UserPanel::reff');
-$routes->get('settings', 'UserPanel::settings');
+$routes->get('settings', 'Settings::index');
 
 /*
  * --------------------------------------------------------------------

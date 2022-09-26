@@ -9,6 +9,7 @@
             </div>
         </div>
     </div>
+    <?= session()->get('username') ?>
     <div class="container-fluid">
         <div class="col-md-12">
             <div class="white-box">

@@ -34,12 +34,5 @@ class UserPanel extends BaseController{
         return view('reff', $data);
     }
 
-    public function settings()
-    {
-        $data = [
-            'title' => 'User setting'
-        ];
-        return view('settings', $data);
-    }
 
 }

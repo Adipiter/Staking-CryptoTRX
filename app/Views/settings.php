@@ -13,14 +13,15 @@
         <div class="col-lg-12 col-xlg-12 col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <form class="form-horizontal form-material">
+                    <form action="Settings/update" method="post" class="form-horizontal form-material">
                         <div class="form-group mb-4">
                             <label class="col-md-12 p-0">Username</label>
                             <div class="col-md-12 border-bottom p-0">
                                 <input
                                     type="text"
                                     class="form-control p-0 border-0"
-                                    value="Dynacharm"
+                                    name="name"
+                                    value=""
                                     readonly="readonly"/>
                             </div>
                         </div>
@@ -71,9 +72,6 @@
             </div>
         </div>
     </div>
-    <footer class="footer text-center">
-        2021 © Ample Admin brought to you by
-        <a href="https://www.wrappixel.com/">wrappixel.com</a>
-    </footer>
+
 </div>
 <?= $this->endSection() ?>
