@@ -2,11 +2,14 @@
 namespace App\Controllers;
 
 class UserPanel extends BaseController{
+
     public function dashboard()
     {
         $data = [
             'title' => 'Dasboard page'
         ];
+
+        
         return view('dashboard', $data);
     }
 

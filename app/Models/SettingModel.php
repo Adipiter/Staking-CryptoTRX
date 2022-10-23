@@ -3,16 +3,9 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class SettingModel extends model{
-	protected $db;
-	public function __contruct(){
-		$this->$db = \Config\Database::connect();
-	}
+	protected $table = 'users';
 
     public function get_user(){
-		$sql = "SELECT * FROM users";
-		$query = $this->$db->query($sql);
-		$data= $query->getResultArray();
-
-		return $data;
+		return $this->findAll();
     }
 }
